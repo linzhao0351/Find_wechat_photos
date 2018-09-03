@@ -19,6 +19,7 @@ class findWechatPhotos():
         self.__makeDir(self.targetDir)
         self.__makeDir(os.path.join(self.targetDir, "th_images"))
         self.__makeDir(os.path.join(self.targetDir, "th_images", "abbr"))
+        self.__makeDir(os.path.join(self.targetDir, "previous_images"))
         
         print("Search begins, please wait...")
          
@@ -49,6 +50,10 @@ class findWechatPhotos():
                         targetFile = os.path.join(self.targetDir, "th_images", "abbr", filename + ".jpg")
                     shutil.copyfile(file, targetFile)
                     count += 1
+                else:
+                    targetFile = os.path.join(self.targetDir, "previous_images", filename + ".jpg")  
+                    shutil.copyfile(file, targetFile)
+                    count += 1 
         return count
     
     def main(self):
