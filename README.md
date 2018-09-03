@@ -12,4 +12,4 @@ This little program helps you find all the photos in your WeChat chat history.
 
 ## Note
 
-In "/all_images" folder, besides those photos, there will be another folder called "/th_images". That folder contains thumbnails or WeChat photos you did not open. Photos whose size is smaller than 3000 bytes (30 KB) are in the folder "/th_images/abbr"; those are photos you cannot see clearly in general.
+In "/all_images" folder, besides those photos, there will be another two folders. Folder "/th_images" contains thumbnails or WeChat photos you did not open. Photos whose size is smaller than 3000 bytes (30 KB) are in the folder "/th_images/abbr"; those are photos you cannot see clearly in general. Folder "previous_images" contains photos from the previous WeChat history you transfered from old phones.
