@@ -39,7 +39,7 @@ class findWechatPhotos():
                 count += self.traversefile(file)
             
             if os.path.isdir(file) == False:
-                if os.path.splitext(filename)[1] == ".jpg" :
+                if os.path.splitext(filename)[1] == ".jpg" or os.path.splitext(filename)[1] == ".png" or os.path.splitext(filename)[1] == ".gif":
                     targetFile = os.path.join(self.targetDir, filename)
                     shutil.copyfile(file, targetFile)
                     count += 1
